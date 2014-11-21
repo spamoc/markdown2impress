@@ -7,7 +7,7 @@ use Data::Section::Simple qw( get_data_section );
 use File::Path qw( make_path );
 use File::Spec;
 use Path::Class;
-use Text::Markdown qw( markdown );
+use Text::Markdown::Discount qw( markdown );
 use Text::Xslate qw( mark_raw );
 
 my %opts = (
@@ -1208,6 +1208,16 @@ a:focus {
     font-family: monospace;
     font-size: 1em;
     line-height: 1.2;
+}
+.step table {
+    border: 1px solid #777777;
+}
+.step table tbody tr:nth-child(odd){
+    background-color:#f6f6fa;
+}
+.step table td {
+    padding: 10px 20px;
+    border: 1px solid #aaaaaa;
 }
 
 /*
